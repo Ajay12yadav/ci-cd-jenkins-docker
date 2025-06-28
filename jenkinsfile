@@ -7,14 +7,14 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = 'your-dockerhub-username/jenkins-node-cicd'
+        IMAGE_NAME = 'ajayyadav1/jenkins-node-cicd'
         DOCKER_CREDS_ID = 'dockerhub-credentials'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-username/ci-cd-jenkins-docker.git'
+                git 'https://github.com/Ajay12yadav/ci-cd-jenkins-docker.git'
             }
         }
 
