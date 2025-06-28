@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Ajay12yadav/ci-cd-jenkins-docker.git'
+                git branch: 'main', url: 'https://github.com/Ajay12yadav/ci-cd-jenkins-docker.git'
             }
         }
 
@@ -34,4 +34,5 @@ pipeline {
         }
     }
 }
+
 
